@@ -1,0 +1,24 @@
+{
+    "name": "workflow",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile": "node scripts/compile.js",
+        "test": "mocha tests",
+        "pretest": "npm run compile",
+        "deploy": "node scripts/deploy.js",
+        "predeploy": "npm run test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "fs-extra": "^6.0.1",
+        "ganache-cli": "^6.1.4",
+        "mocha": "^5.2.0",
+        "solc": "^0.4.24",
+        "truffle-hdwallet-provider": "0.0.3",
+        "web3": "^1.0.0-beta.34"
+    }
+}
